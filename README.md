@@ -15,17 +15,17 @@ npm install ua-compatible --save
 ## Usage
 
 ```
-  var express = require('express')
-  var app = express()
-  var uaCompatible = require('ua-compatible')
+var express = require('express')
+var app = express()
+var uaCompatible = require('ua-compatible')
 
-  app.use(uaCompatible)
+app.use(uaCompatible)
 
-  app.get('/', function (req, res) {
-    res.get('X-UA-Compatible') // === 'IE=edge,chrome=1'
-  })
+app.get('/', function (req, res) {
+  res.get('X-UA-Compatible') // === 'IE=edge,chrome=1'
+})
 
-  app.listen(3000)
+app.listen(3000)
 ```
 
 ## Credits
